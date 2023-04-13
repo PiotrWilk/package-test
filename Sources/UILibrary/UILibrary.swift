@@ -1,5 +1,5 @@
 public struct UILibrary {
-    public private(set) var text = "Hello, World!"
+    public private(set) var text = "Hello, UILibrary!"
 
     public init() {
     }
