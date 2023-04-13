@@ -7,17 +7,11 @@
 
 import SwiftUI
 
-struct CircleView: View {
+public struct CircleView: View {
     let fillColor: Color
     
-    var body: some View {
+    public var body: some View {
         Circle()
             .fill(fillColor)
-    }
-}
-
-struct CircleView_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleView(fillColor: .white)
     }
 }
