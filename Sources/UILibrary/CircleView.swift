@@ -10,6 +10,10 @@ import SwiftUI
 public struct CircleView: View {
     let fillColor: Color
     
+    public init(fillColor: Color) {
+        self.fillColor = fillColor
+    }
+    
     public var body: some View {
         Circle()
             .fill(fillColor)
