@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "UILibrary",
             targets: ["UILibrary", "Triangle"]),
+        .library(
+            name: "Triangle",
+            targets: ["Triangle"]),
         
     ],
     dependencies: [
