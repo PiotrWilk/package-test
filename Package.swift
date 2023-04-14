@@ -24,14 +24,17 @@ let package = Package(
         .target(
             name: "Library",
             dependencies: []),
-        .target(
-            name: "Triangle",
-            dependencies: [],
+            path: "Sources/Library")
         .target(
             name: "Circle",
             dependencies: [],
+            path: "Sources/Circle")
+        .target(
+            name: "Triangle",
+            dependencies: [],
+            path: "Sources/Triangle")
         .testTarget(
             name: "UILibraryTests",
-            dependencies: ["UILibrary"]),
+            dependencies: ["Library"])
     ]
 )
