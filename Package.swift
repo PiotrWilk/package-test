@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "UI-Library",
+    name: "UILibrary",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "UI-Library",
-            targets: ["Library", "Circle", "Triangle"]),
+            name: "UILibrary",
+            targets: ["UILibrary"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,19 +22,10 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "Library",
+            name: "UILibrary",
             dependencies: []),
-            path: "Sources/Library")
-        .target(
-            name: "Circle",
-            dependencies: [],
-            path: "Sources/Circle")
-        .target(
-            name: "Triangle",
-            dependencies: [],
-            path: "Sources/Triangle")
         .testTarget(
             name: "UILibraryTests",
-            dependencies: ["Library"])
+            dependencies: ["UILibrary"]),
     ]
 )
