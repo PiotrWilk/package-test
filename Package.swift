@@ -13,6 +13,7 @@ let package = Package(
         .library(
             name: "UILibrary",
             targets: ["UILibrary"]),
+        
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,7 +24,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "UILibrary",
-            dependencies: []),
+            dependencies: [],
+            path: "./Sources/UILibrary"),
         .testTarget(
             name: "UILibraryTests",
             dependencies: ["UILibrary"]),
